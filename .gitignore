@@ -1,0 +1,46 @@
+# -----------------------------
+# Maven / Gradle
+# -----------------------------
+/target/
+/build/
+/out/
+!.mvn/wrapper/maven-wrapper.jar
+
+# -----------------------------
+# IntelliJ
+# -----------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+*.class
+*.log
+/.idea_modules/
+
+# -----------------------------
+# OS / système
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Logs et fichiers temporaires
+# -----------------------------
+*.log
+*.tmp
+*.swp
+*.swo
+
+# -----------------------------
+# Spring Boot
+# -----------------------------
+/spring.log
+/h2db/
+*.h2.db
+
+# -----------------------------
+# Eclipse (si jamais utilisé)
+# -----------------------------
+.project
+.classpath
+.settings/

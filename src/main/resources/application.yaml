@@ -1,25 +1,31 @@
 spring:
   application:
     name: tcm-assistant-back
+
   datasource:
     url: jdbc:postgresql://localhost:54320/tcm-assistant
     username: tcm-assistant
     password: tcm-assistant
     driver-class-name: org.postgresql.Driver
 
-    jpa:
+  jpa:
+    open-in-view: false
+    show-sql: true
+
+    hibernate:
+      ddl-auto: update
+
+    properties:
       hibernate:
-        ddl-auto: update
-      show-sql: true
-      open-in-view: false
-      properties:
-        hibernate:
-          format_sql: true
-          dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
 
-    sql:
-      init:
-        mode: never
+  sql:
+    init:
+      mode: never
 
-server:
-  port: 8080
+logging:
+  level:
+    root: INFO
+    com.blacktogreen.tcm_assistant_back: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.tool.schema: DEBUG

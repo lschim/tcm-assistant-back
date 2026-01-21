@@ -10,4 +10,5 @@ public record DrugDto(
     String nature,
     List<String> flavors,
     List<String> movement,
-    String categoryName) {}
+    String categoryName,
+    int numberOfStars) {}

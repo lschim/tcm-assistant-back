@@ -34,10 +34,10 @@ public class DrugCategoryService {
    * @param category
    * @return the updated {@link DrugCategory}
    */
-  public DrugCategory updateCategoryUserInfos(DrugCategory category) {
+  public DrugCategory updateCategoryUserInfos(long id, DrugCategory category) {
     DrugCategory toUpdate =
         drugCategoryRepository
-            .findById(category.getId())
+            .findById(id)
             .orElseThrow(
                 () ->
                     new NotFoundException(
